@@ -1,0 +1,59 @@
+.dashboard-page {
+  padding: 28px 0;
+  min-height: calc(100vh - 52px);
+}
+
+.dashboard-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.dashboard-role {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.dash-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.dash-card-value {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.dash-card-label {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.dash-card-pending .dash-card-value { color: #d97706; }
+.dash-card-reviewed .dash-card-value { color: #2563eb; }
+.dash-card-approved .dash-card-value { color: #059669; }
+.dash-card-total .dash-card-value { color: #0f766e; }
+
+.dashboard-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dashboard-actions a {
+  text-decoration: none;
+}

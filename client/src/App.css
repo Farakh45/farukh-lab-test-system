@@ -1,0 +1,14 @@
+.App {
+  min-height: 100vh;
+  background-color: #e8eef2;
+}
+
+.app-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  color: #64748b;
+  font-family: 'Source Sans 3', sans-serif;
+}

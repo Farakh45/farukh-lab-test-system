@@ -1,0 +1,68 @@
+.farukh-nav {
+  background: #0f766e;
+  color: #fff;
+  padding: 12px 0;
+  box-shadow: 0 2px 8px rgba(15, 118, 110, 0.2);
+}
+
+.farukh-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.farukh-nav-brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.farukh-nav-brand:hover {
+  color: #ccfbf1;
+}
+
+.farukh-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.farukh-nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.farukh-nav-links a:hover {
+  color: #ccfbf1;
+}
+
+.farukh-nav-user {
+  font-size: 14px;
+  color: #ccfbf1;
+  margin-left: 8px;
+}
+
+.farukh-nav-role {
+  font-size: 12px;
+  background: rgba(255,255,255,0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.farukh-nav-logout {
+  padding: 8px 14px;
+  font-size: 14px;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.farukh-nav-logout:hover {
+  background: rgba(255,255,255,0.3);
+}

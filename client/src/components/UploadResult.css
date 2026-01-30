@@ -1,0 +1,45 @@
+.upload-page {
+  padding: 28px 0;
+  min-height: calc(100vh - 52px);
+}
+
+.upload-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.upload-desc {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.upload-form {
+  max-width: 520px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.upload-form .form-group {
+  margin-bottom: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.upload-form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.upload-form .btn {
+  margin-top: 8px;
+}

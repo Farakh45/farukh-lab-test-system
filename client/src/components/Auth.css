@@ -1,0 +1,82 @@
+.auth-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background: linear-gradient(160deg, #e8eef2 0%, #d1dbe2 100%);
+}
+
+.auth-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 36px 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(45, 55, 72, 0.08);
+  border: 1px solid #cbd5e1;
+}
+
+.auth-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f766e;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.auth-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.auth-footer a {
+  color: #0d9488;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+.role-radios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.role-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #2d3748;
+}
+
+.role-radio input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0d9488;
+  cursor: pointer;
+}
+
+.role-radio span {
+  font-size: 15px;
+}
