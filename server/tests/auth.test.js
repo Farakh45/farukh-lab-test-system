@@ -5,12 +5,13 @@ const request = require('supertest');
 const app = require('../server');
 const User = require('../models/User');
 const mongoose = require('mongoose');
+const { getMongoUriForTest } = require('./mongoTestHelper');
 
 jest.setTimeout(30000);
 
 describe('Auth API', () => {
   beforeAll(async () => {
-    const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/farukh-lab-results-test';
+    const mongoURI = await getMongoUriForTest();
     try {
       if (mongoose.connection.readyState !== 0) {
         await mongoose.disconnect();
