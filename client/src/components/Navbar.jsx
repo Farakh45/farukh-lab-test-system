@@ -12,8 +12,6 @@ const Navbar = ({ user, onLogout }) => {
           <Link to="/dashboard">Dashboard</Link>
           <Link to="/results">Results</Link>
           {user.role === 'lab_technician' && <Link to="/upload">Upload</Link>}
-          <span className="farukh-nav-user">{user.name}</span>
-          <span className="farukh-nav-role">{user.role}</span>
           <button type="button" onClick={onLogout} className="btn btn-secondary farukh-nav-logout">
             Logout
           </button>

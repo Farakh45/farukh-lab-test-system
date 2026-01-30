@@ -38,9 +38,6 @@ const Dashboard = ({ user }) => {
     <div className="dashboard-page">
       <div className="container">
         <h1 className="dashboard-heading">Dashboard</h1>
-        <p className="dashboard-role">
-          Logged in as <strong>{user.role.replace('_', ' ')}</strong>
-        </p>
 
         <div className="dashboard-cards">
           <div className="dash-card dash-card-pending">

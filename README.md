@@ -16,7 +16,7 @@ Lab Test Result Management System with role-based workflow (Lab Technician → D
 
 - **Backend**: Node.js, Express, MongoDB (Mongoose), JWT, bcrypt, Joi, Helmet, CORS
 - **Frontend**: React (Vite), React Router, Axios
-- **Testing**: Jest, Supertest
+- **Testing**: Jest, Supertest, mongodb-memory-server (in-memory DB for local tests)
 - **CI/CD**: GitHub Actions (`.github/workflows/ci-cd.yml`)
 
 ## MongoDB
@@ -52,9 +52,13 @@ Runs on `http://localhost:5173`. Uses Vite proxy to `/api` → `http://localhost
 
 ```bash
 cd server
-# Set MONGODB_URI for test DB (e.g. mongodb://localhost:27017/farukh-lab-results-test or Atlas test DB)
+npm install
 npm test
 ```
+
+**Local:** Tests use **mongodb-memory-server** (in-memory MongoDB), so you do **not** need MongoDB installed or running. First run may download the MongoDB binary into `server/.cache/`.
+
+**CI:** GitHub Actions uses the MongoDB service container and sets `MONGODB_URI`; no extra config needed.
 
 ### Lint
 
@@ -66,7 +70,7 @@ npm run lint
 ## CI/CD Pipeline
 
 - **Lint**: ESLint on server
-- **Test**: MongoDB service + Jest (auth + results + roles)
+- **Test**: Jest (auth + results + roles). CI uses MongoDB service; local runs use in-memory DB.
 - **Build**: Vite build for client
 - **Deploy Staging**: on push to `develop` (placeholder)
 - **Deploy Production**: on push to `main` (placeholder)
@@ -80,12 +84,5 @@ FARUKH/
 ├── .github/workflows/ci-cd.yml
 ├── client/          # Vite + React
 ├── server/          # Express API, models, routes, tests
-├── research.txt     # Research paper content
-├── presentation.txt # Presentation outline
 └── README.md
 ```
-
-## Documentation
-
-- **research.txt** – Research paper outline (Abstract, Introduction, Related work, Proposed solution, Implementation, Conclusion, References)
-- **presentation.txt** – 10-minute presentation outline (Project intro, CI/CD walkthrough, Toolset)
